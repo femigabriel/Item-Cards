@@ -7,11 +7,14 @@ interface Props {
   data: ResponseFetchUsers[];
 }
 export default function Home({ data }: Props) {
-  console.log({ data });
   return (
     <div className="p-5 pt-20 flex justify-center  w-full">
-      <ItemCard data={data}/>
-  
+      <div className="">
+        <h3 className="text-center font-bold text-blue-800 text-[32px]">
+          Item Card
+        </h3>
+        <ItemCard data={data} />
+      </div>
     </div>
   );
 }
