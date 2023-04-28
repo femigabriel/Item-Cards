@@ -1,6 +1,5 @@
 import react, { useState } from "react";
-import { useQuery } from "react-query";
-import ApiServices, { ResponseFetchUsers } from "@/services/ApiServices";
+import { ResponseFetchUsers } from "@/services/ApiServices";
 import { Button, Modal } from "antd";
 
 interface Props {
