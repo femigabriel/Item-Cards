@@ -10,7 +10,7 @@ export default function Home({ data }: Props) {
   return (
     <div className="p-5 pt-20 flex justify-center  w-full">
       <div className="">
-        <h3 className="text-center font-bold text-blue-800 text-[32px]">
+        <h3 className="text-center font-bold text-blue-800 text-[32px] mb-5">
           Item Card
         </h3>
         <ItemCard data={data} />
