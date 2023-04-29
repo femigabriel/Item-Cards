@@ -48,6 +48,17 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   justify-content: space-around;
 }
+.item_card:hover {
+  width: 100%;
+  transform: scale(1.1);
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.1);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.1);
+  transition: all 200ms ease-in;
+}
 
 @media screen and (max-width: 720px) {
   .item_card {
