@@ -61,7 +61,7 @@ export default function ItemCard({ data }: Props) {
               );
             })}
         </div>
-        <div className=" pt-10 flex item-center justify-center w-full">
+        <div className=" pt-10 flex item-center justify-center w-full mb-5">
           <Button onClick={loadMore} className=" bg-blue-950 text-white ">
             Load more
           </Button>
