@@ -71,7 +71,7 @@ export default function ItemCard({ data }: Props) {
       <Modal
         title={isModalOpen?.id}
         open={isModalOpen !== undefined}
-        // onOk={handleCancel}
+        onOk={handleCancel}
         onCancel={handleCancel}
       >
         <h3 className="font-bold text-[18px] text-blue-800 uppercase ">
