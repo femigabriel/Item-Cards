@@ -1,38 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# About this Project
 
-## Getting Started
+This is a simple web application built with Next.js that consumes data from an API and displays it in a visually appealing way. The API endpoint used in this project is `https://jsonplaceholder.typicode.com/posts`, which returns a JSON object containing 100 posts.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [CSS Library](#css-library)
+- [How it Works](#how-it-works)
+- [Notes](#notes)
+- [Todo](#todo)
+- [Conclusion](#conclusion)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Requirements
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+To run this application locally, you need to have Node.js and npm installed on your machine.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Installation
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Clone the repository
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```
+   git clone https://github.com/femigabriel/Susejgroup-assessement
+   ```
 
-## Learn More
+2. Install the dependencies
 
-To learn more about Next.js, take a look at the following resources:
+   ```
+   cd my-project
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Running the Application
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To start the development server, run the following command:
+`    npm run dev
+   `
+The application can be accessed on http://localhost:3000.
 
-## Deploy on Vercel
+## CSS Library
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project uses Tailwind CSS as the CSS library and Ant design library. Tailwind CSS is a utility-first CSS framework that provides a set of pre-defined CSS classes to easily style HTML elements.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## How it works
+
+    - Nextjs `getServerProps` fetches data on page load
+    - You can see 10 results and a button to load more
+    - The long descriptive text is truncated and reduced to two lines with a button to read the full text
+    - On read more click, you'll see a pop-up that shows the full title and description with buttons to close popup modal
+
+## Notes
+
+The api doesn't support pagination; so I had to load all results and show only 10 on page load. When the load more button is clicked, 10 new results would be added to the old data and this continues as you click.
+
+When there's no result to show, nothing gets added to the screen.
+
+## Todo
+
+    - Add Dark Mode
+    - Add unit test
+
+## Conclusion
+
+This web application is a simple demonstration of how to consume data from an API and display it in a visually appealing way using Next.js and Tailwind CSS. Feel free to modify and use this codebase as a starting point for your own projects.
