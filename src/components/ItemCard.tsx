@@ -62,7 +62,7 @@ export default function ItemCard({ data }: Props) {
             })}
         </div>
         <div className=" pt-10 flex item-center justify-center w-full">
-          <Button onClick={loadMore} className=" bg-blue-950 text-white">
+          <Button onClick={loadMore} className=" bg-blue-950 text-white ">
             Load more
           </Button>
         </div>
