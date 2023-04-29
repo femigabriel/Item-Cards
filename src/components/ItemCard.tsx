@@ -41,7 +41,7 @@ export default function ItemCard({ data }: Props) {
                 >
                   <div className="">
                     <div className="mb-14 text-blue-800  border-white rounded-full w-10 h-10 flex justify-center items-center bg-gray-200">
-                      <span className="text-center">{list.id}</span>
+                      <span className="text-center font-semibold">{list.id}</span>
                     </div>
                     <div className="">
                       <h3 className="font-bold text-[17px] text-blue-800 uppercase tracking-wide">
