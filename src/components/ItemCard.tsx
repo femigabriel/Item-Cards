@@ -44,7 +44,7 @@ export default function ItemCard({ data }: Props) {
                       <span className="text-center">{list.id}</span>
                     </div>
                     <div className="">
-                      <h3 className="font-bold text-[18px] text-blue-800 ">
+                      <h3 className="font-bold text-[17px] text-blue-800 uppercase tracking-wide">
                         {list.title.substring(0, 15)}
                       </h3>
                       <p className="text-gray-400 text-[14px] line-clamp-2 ">
@@ -60,10 +60,7 @@ export default function ItemCard({ data }: Props) {
             })}
         </div>
         <div className=" pt-10 flex item-center justify-center w-full">
-          <Button
-            onClick={loadMore}
-            className=" bg-blue-950 text-white"
-          >
+          <Button onClick={loadMore} className=" bg-blue-950 text-white">
             Load more
           </Button>
         </div>
@@ -72,10 +69,10 @@ export default function ItemCard({ data }: Props) {
       <Modal
         title={isModalOpen?.id}
         open={isModalOpen !== undefined}
-        onOk={handleCancel}
+        // onOk={handleCancel}
         onCancel={handleCancel}
       >
-        <h3 className="font-bold text-[18px] text-blue-800 ">
+        <h3 className="font-bold text-[18px] text-blue-800 uppercase">
           {isModalOpen?.title}
         </h3>
         <p className="text-gray-400 text-[14px] line-clamp-3 ">
